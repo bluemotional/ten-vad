@@ -14,6 +14,10 @@
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/TEN-framework/TEN-vad)
 <!-- [![ReadmeX](https://raw.githubusercontent.com/CodePhiliaX/resource-trusteeship/main/readmex.svg)](https://readmex.com/TEN-framework/ten-vad) -->
 
+
+[![README（英文）][lang-en-badge]][lang-en-readme]
+[![简体中文指南][lang-zh-badge]][lang-zh-readme]
+
 <a href="https://trendshift.io/repositories/14548" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14548" alt="TEN-framework%2Ften-vad | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 </div>
@@ -21,13 +25,13 @@
 <br>
 
 ## 最新更新 🔥
-- [2025/11] **WASM**构建指南和浏览器测试 Demo现已发布！您可以在 `lib/Web` and `examples`中查看。
-- [2025/11] 新增在 **Linux、macOS** 上使用 **ONNX** 模型的 **Python** 推理！ 感谢[Guy Nicholson](https://github.com/guynich)的贡献！
-- [2025/11] 新增在 **Linux、macOS** 和 **Windows** 上 pre-lib 的 **Golang** 用法，感谢[hylarucoder](https://github.com/hylarucoder)的贡献！
-- [2025/11] 新增在 **Linux、macOS、Windows、Android** 上 pre-lib 的 **Java** 用法，感谢[ZhangYang(arthasking123)](https://github.com/arthasking123)的贡献！
-- [2025/07] 🎉 重磅! **TEN VAD** 现已集成到[**k2-fsa/sherpa-onnx**](https://github.com/k2-fsa/sherpa-onnx)中, 感谢[Fangjun Kuang](https://github.com/csukuangfj)的出色工作！开发者可以实现更精确的语音片段提取，并获得增强的 ASR 体验！参考文档➡️[Documentation](https://k2-fsa.github.io/sherpa/onnx/vad/ten-vad.html#) 。
-- [2025/07] 新增在 **macOS** 和 **Windows** 上 pre-lib 的 **Python** 推理!
-- [2025/06] TEN VAD **ONNX** 模型和相应的预处理代码现已开源！开发者现在可以在**任何平台**和**任何硬件架构**上部署 **TEN VAD**！
+- [2025/11] **WASM**构建指南和浏览器测试 Demo发布啦！您可以在 `lib/Web` and `examples`中查看。
+- [2025/11] 新增 **Linux、macOS** 上使用 **ONNX** 模型的 **Python** 推理！ 感谢 [Guy Nicholson](https://github.com/guynich) 的贡献！
+- [2025/11] 新增 **Linux、macOS** 和 **Windows** 上 **pre-lib** 的 **Golang** 用法，感谢 [hylarucoder](https://github.com/hylarucoder) 的贡献！
+- [2025/11] 新增 **Linux、macOS、Windows、Android** 上 **pre-lib** 的 **Java** 用法，感谢 [ZhangYang(arthasking123)](https://github.com/arthasking123) 的贡献！
+- [2025/07] 🎉 重磅! **TEN VAD** 现已集成到 [**k2-fsa/sherpa-onnx**](https://github.com/k2-fsa/sherpa-onnx) 中, 感谢 [Fangjun Kuang](https://github.com/csukuangfj)！开发者可以更精确的提取语音片段，并获得更好的 ASR 体验！参考文档➡️ [Documentation](https://k2-fsa.github.io/sherpa/onnx/vad/ten-vad.html#) 。
+- [2025/07] 新增 **macOS** 和 **Windows** 上 **pre-lib** 的 **Python** 推理。
+- [2025/06] TEN VAD **ONNX** 模型和相应的预处理代码现已开源！开发者现在可以在**任何平台**和**任何硬件架构**上部署 **TEN VAD**。
 - [2025/06] 新增适用于 **Web WASM** 支持的 **WASM+JS**。
 
 <br>
@@ -41,7 +45,7 @@
     - [性能对比](#11-performance-comparison)
   - [智能体友好](#2-agent-friendly)
   - [轻量级](#3-lightweight)
-  - [支持多种编程语言和拼图](#4-multiple-programming-languages-and-platforms)
+  - [支持多种编程语言和平台](#4-multiple-programming-languages-and-platforms)
   - [支持的采样率和帧移](#5-supported-sampling-rate-and-hop-size)
 - [开发者推进](#developers-testimonial)
 - [安装指南](#installation)
@@ -68,11 +72,11 @@
 
 TEN 是一个面向语音对话 AI 代理的开源框架。
 
-[TEN 生态][ten-ecosystem-anchor] 包含 [TEN Framework][ten-framework-link]、[智能体示例][ten-agent-example-link]、[VAD][ten-vad-link]、[Turn Detection][ten-turn-detection-link] 以及 [官网][ten-portal-link]。
+[TEN 生态][ten-ecosystem-anchor] 包含 [TEN Framework][ten-framework-link]、[代理示例][ten-agent-example-link]、[VAD][ten-vad-link]、[Turn Detection][ten-turn-detection-link] 以及 [Portal][ten-portal-link]。
 
 <br>
 
-| 社区渠道 | P用途 |
+| 社区渠道 | 用途 |
 | ---------------- | ------- |
 | [![Follow on X](https://img.shields.io/twitter/follow/TenFramework?logo=X&color=%20%23f5f5f5)](https://twitter.com/intent/follow?screen_name=TenFramework) | 在 X 上关注 TEN Framework，获取更新与公告 |
 | [![Follow on LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-TEN_Framework-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/company/ten-framework) | 在 LinkedIn 上关注 TEN Framework，获取动态和公告 |
@@ -104,7 +108,7 @@ TEN 是一个面向语音对话 AI 代理的开源框架。
 
 ## **项目简介**
 
-**TEN VAD** 是一个专为企业级应用设计的实时语音活动检测模型，提供准确的帧级语音活动检测。与业界常用的 WebRTC VAD 和 Silero VAD 相比，它的精度大幅提升。此外，与 Silero VAD 相比，TEN VAD 具有更低的计算复杂度，消耗更少内存。同时，该架构的时间效率能够实现快速的语音活动检测，显著减少对话式 AI 系统中的端到端响应和轮次检测延迟。
+**TEN VAD** 是一个专为企业级应用设计的实时语音活动检测模型，提供准确的帧级人声检测。相比业界常用的 WebRTC VAD 和 Silero VAD ，它的精度更高。此外，与 Silero VAD 相比，TEN VAD 具有更低的计算复杂度，消耗更少内存。同时，该架构的时间效率能够实现快速的语音活动检测，显著减少对话式 AI 系统中的端到端响应和轮次检测延迟。
 
 <br>
 
@@ -229,7 +233,7 @@ TEN VAD 在 16kHz 音频输入上运行，支持可配置的帧移（优化的�
 ## **开发者推荐**
 > * "我们选择 TEN VAD 是因为与其他 VAD 相比，能更快、更准确地检测日语的句尾，并且仍然保持足够轻量和快速，适合实时应用。” - LiveCap, Hakase shojo
 
-> * "TEN VAD 的整体性能优于 Silero VAD。其高准确性和低资源消耗帮助我们提高了效率并显著降低了成本。” * - Rustpbx.
+> * "TEN VAD 的整体性能优于 Silero VAD。其高准确性和低资源消耗帮助我们提高了效率并显著降低了成本。” - Rustpbx.
 > 
 <br>
 
@@ -785,3 +789,10 @@ TEN VAD 可在以下 AI 驱动的问答平台上使用。它们可以帮助您�
 [ten-portal-link]: https://github.com/ten-framework/portal
 [ten-portal-shield]: https://img.shields.io/github/stars/ten-framework/portal?color=ffcb47&labelColor=gray&style=flat-square&logo=github
 [ten-portal-banner]: https://github.com/user-attachments/assets/f56c75b9-722c-4156-902d-ae98ce2b3b5e
+
+
+<!-- Localized READMEs -->
+[lang-en-badge]: https://img.shields.io/badge/English-lightgrey
+[lang-en-readme]: https://github.com/TEN-framework/ten-vad/blob/main/README.md
+[lang-zh-badge]: https://img.shields.io/badge/简体中文-lightgrey
+[lang-zh-readme]: https://github.com/TEN-framework/ten-vad/blob/main/docs/README-CN.md
