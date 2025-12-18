@@ -803,6 +803,6 @@ TEN VAD 可在以下 AI 驱动的问答平台上使用。它们可以帮助您�
 [lang-en-badge]: https://img.shields.io/badge/English-lightgrey
 [lang-en-readme]: https://github.com/TEN-framework/ten-vad/blob/main/README.md
 [lang-zh-badge]: https://img.shields.io/badge/简体中文-lightgrey
-[lang-zh-readme]: https://github.com/bluemotional/ten-vad/blob/main/docs/README-CN.md
+[lang-zh-readme]: https://github.com/bluemotional/ten-vad/blob/readme1205/docs/README-CN.md
 
 <!-- Localized READMEs -->
