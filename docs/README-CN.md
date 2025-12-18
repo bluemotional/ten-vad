@@ -800,9 +800,9 @@ TEN VAD 可在以下 AI 驱动的问答平台上使用。它们可以帮助您�
 [ten-portal-shield]: https://img.shields.io/github/stars/ten-framework/portal?color=ffcb47&labelColor=gray&style=flat-square&logo=github
 [ten-portal-banner]: https://github.com/user-attachments/assets/f56c75b9-722c-4156-902d-ae98ce2b3b5e
 
-
-<!-- Localized READMEs -->
 [lang-en-badge]: https://img.shields.io/badge/English-lightgrey
 [lang-en-readme]: https://github.com/TEN-framework/ten-vad/blob/main/README.md
 [lang-zh-badge]: https://img.shields.io/badge/简体中文-lightgrey
 [lang-zh-readme]: https://github.com/bluemotional/ten-vad/blob/main/docs/README-CN.md
+
+<!-- Localized READMEs -->
