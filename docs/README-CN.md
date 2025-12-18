@@ -11,11 +11,15 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome!-brightgreen.svg?style=flat-square)](https://github.com/TEN-framework/ten-vad/pulls)
 [![HuggingFace TEN VAD](https://img.shields.io/badge/Hugging%20Face-TEN%20VAD-yellow?style=flat&logo=huggingface)](https://huggingface.co/TEN-framework/ten-vad)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/TEN-framework/TEN-vad)
-<!-- [![ReadmeX](https://raw.githubusercontent.com/CodePhiliaX/resource-trusteeship/main/readmex.svg)](https://readmex.com/TEN-framework/ten-vad) -->
-
+<br>
 
 [![README（英文）][lang-en-badge]][lang-en-readme]
 [![简体中文指南][lang-zh-badge]][lang-zh-readme]
+
+<!-- [![ReadmeX](https://raw.githubusercontent.com/CodePhiliaX/resource-trusteeship/main/readmex.svg)](https://readmex.com/TEN-framework/ten-vad) -->
+
+
+
 
 <a href="https://trendshift.io/repositories/14548" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14548" alt="TEN-framework%2Ften-vad | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
