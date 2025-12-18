@@ -10,7 +10,6 @@
 ![](https://img.shields.io/github/contributors/ten-framework/ten-vad?color=c4f042&labelColor=gray&style=flat-square)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome!-brightgreen.svg?style=flat-square)](https://github.com/TEN-framework/ten-vad/pulls)
 [![HuggingFace TEN VAD](https://img.shields.io/badge/Hugging%20Face-TEN%20VAD-yellow?style=flat&logo=huggingface)](https://huggingface.co/TEN-framework/ten-vad)
-[![GitHub license](https://img.shields.io/badge/License-Apache_2.0_with_certain_conditions-blue.svg?labelColor=%20%23155EEF&color=%20%23528bff)](https://github.com/TEN-framework/ten-vad/blob/main/LICENSE)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/TEN-framework/TEN-vad)
 <!-- [![ReadmeX](https://raw.githubusercontent.com/CodePhiliaX/resource-trusteeship/main/readmex.svg)](https://readmex.com/TEN-framework/ten-vad) -->
 
@@ -25,7 +24,7 @@
 <br>
 
 ## 最新更新 🔥
-- [2025/11] **WASM**构建指南和浏览器测试 Demo发布啦！您可以在 `lib/Web` and `examples`中查看。
+- [2025/11] **WASM** 构建指南和浏览器测试 Demo发布啦！您可以在 `lib/Web` and `examples`中查看。
 - [2025/11] 新增 **Linux、macOS** 上使用 **ONNX** 模型的 **Python** 推理！ 感谢 [Guy Nicholson](https://github.com/guynich) 的贡献！
 - [2025/11] 新增 **Linux、macOS** 和 **Windows** 上 **pre-lib** 的 **Golang** 用法，感谢 [hylarucoder](https://github.com/hylarucoder) 的贡献！
 - [2025/11] 新增 **Linux、macOS、Windows、Android** 上 **pre-lib** 的 **Java** 用法，感谢 [ZhangYang(arthasking123)](https://github.com/arthasking123) 的贡献！
@@ -47,7 +46,7 @@
   - [轻量级](#3-lightweight)
   - [支持多种编程语言和平台](#4-multiple-programming-languages-and-platforms)
   - [支持的采样率和帧移](#5-supported-sampling-rate-and-hop-size)
-- [开发者推进](#developers-testimonial)
+- [开发者推荐](#developers-testimonial)
 - [安装指南](#installation)
 - [快速开始](#quick-start)
   - [Python 用法](#python-usage)
@@ -88,9 +87,9 @@ TEN 是一个面向语音对话 AI 代理的开源框架。
 
 > \[!IMPORTANT]
 >
-> **保持关注** ⭐️
+> **请关注 TEN ！** ⭐️
 >
-> 实时获取版本更新与最新动态。您的支持能帮助 TEN 变得更好！
+> 获取版本更新等最新动态。您的支持能帮助 TEN 变得更好！
 
 <br>
 
@@ -108,7 +107,7 @@ TEN 是一个面向语音对话 AI 代理的开源框架。
 
 ## **项目简介**
 
-**TEN VAD** 是一个专为企业级应用设计的实时语音活动检测模型，提供准确的帧级人声检测。相比业界常用的 WebRTC VAD 和 Silero VAD ，它的精度更高。此外，与 Silero VAD 相比，TEN VAD 具有更低的计算复杂度，消耗更少内存。同时，该架构的时间效率能够实现快速的语音活动检测，显著减少对话式 AI 系统中的端到端响应和轮次检测延迟。
+**TEN VAD** 是一个专为企业级应用设计的实时语音活动检测模型，提供准确的帧级人声检测。相比业界常用的 WebRTC VAD 和 Silero VAD ，它的精度更高。此外，与 Silero VAD 相比，TEN VAD 具有更低的计算复杂度，消耗更少内存。同时，该架构的时间效率能够实现快速的语音活动检测，显著减少对话式 AI 系统中的端到端响应延迟和轮次检测延迟。
 
 <br>
 
@@ -116,7 +115,7 @@ TEN 是一个面向语音对话 AI 代理的开源框架。
 
 ### **1. 高性能:**
 
-下图展示了 WebRTC VAD（基于音高）、Silero VAD 和 TEN VAD 的精确度-召回率曲线。该对比是在经过精确人工标注的测试集上进行的。音频文件来源于 librispeech、gigaspeech、DNS Challenge 等。如图所示，TEN VAD 实现了最佳性能。此外，我们在内部大型真实业务数据集上进行了交叉验证，证明对比结果的可复现性。**带有标注标签的测试集**已发布在本仓库的 "testset" 目录下。
+下图展示了 WebRTC VAD（基于 pitch 音高）、Silero VAD 和 TEN VAD 的精确度-召回率曲线。该对比是在经过精确人工标注的测试集上进行的。测试集中的音频文件来源于 librispeech、gigaspeech、DNS Challenge 等。如图所示，TEN VAD 实现了最佳性能。此外，我们在内部大型真实业务数据集上进行了交叉验证，结果证明了该对比的可复现性。**带有标注标签的测试集**已发布在本仓库的 "testset" 目录下。
 
  <br>
 
@@ -125,7 +124,7 @@ TEN 是一个面向语音对话 AI 代理的开源框架。
 *请注意，默认阈值 0.5 用于生成二元语音指示器（0 代表非语音信号，1 代表语音信号）。此阈值需要根据您的特定领域任务进行调整。* 
 
 
-### **1.1 性能对比脚本**
+### **1.1 性能对比**
 
 开发者可以在 Linux x64 上执行以下脚本，在开源测试集上复现 TEN VAD 和 Silero VAD 的性能对比 PR 曲线（如前文图中所示），只需一行代码。输出图表将保存在与脚本相同的目录下。
 
@@ -138,7 +137,7 @@ python plot_pr_curves.py
 
 ### **2. 智能体友好:**
 
-如下图所示，TEN VAD 能够快速检测出语音与非语音之间的过渡，而 Silero VAD 则存在数百毫秒的延迟，增加了人机交互系统中的端到端延迟。此外，如 6.5 秒到 7.0 秒音频段所示，Silero VAD 未能识别相邻语音段之间的短暂静音。
+如下图所示，TEN VAD 能够快速检测出语音与非语音之间的过渡，而 Silero VAD 则存在数百毫秒的延迟，这会增加人机交互系统中的端到端累计延迟。此外，如 6.5 秒到 7.0 秒音频段所示，Silero VAD 未能识别相邻语音段之间的短暂静音。
 
 ![Agent-Friendly Response](https://github.com/TEN-framework/ten-vad/raw/main/examples/images/Agent-Friendly-image.png)
 <br>
@@ -227,11 +226,11 @@ TEN VAD 为五个操作系统（Linux x64、Windows、macOS、Android、iOS）�
 
 ### **5. 支持的采样率和帧移（Hop Size）:**
 
-TEN VAD 在 16kHz 音频输入上运行，支持可配置的帧移（优化的帧配置：160/256 采样点 = 10/16 毫秒）。其他采样率需要重采样到 16kHz。
+TEN VAD 的音频输入为 16kHz，支持可配置的帧移（优化的帧配置：160/256 采样点 = 10/16 毫秒）。其他采样率需要重采样到 16kHz。
 <br>
 
 ## **开发者推荐**
-> * "我们选择 TEN VAD 是因为与其他 VAD 相比，能更快、更准确地检测日语的句尾，并且仍然保持足够轻量和快速，适合实时应用。” - LiveCap, Hakase shojo
+> * "我们选择 TEN VAD 是因为与其他 VAD 相比，它能更快、更准确地检测日语的句尾，并且仍然保持足够轻量和快速，适合实时应用。” - LiveCap, Hakase shojo
 
 > * "TEN VAD 的整体性能优于 Silero VAD。其高准确性和低资源消耗帮助我们提高了效率并显著降低了成本。” - Rustpbx.
 > 
@@ -331,7 +330,7 @@ git clone https://github.com/TEN-framework/ten-vad.git
 
 `pip install -r ./examples/requirements.txt`
 
-*注意：如果您没有安装 **libc++1** (Linux), 您需要通过以下代码来安装它：*
+*注意：如果您没有安装 **libc++1** (Linux), 您需要通过以下代码来安装：*
 
 ```
 sudo apt update
@@ -383,7 +382,7 @@ from ten_vad import TenVad
 <br>
 
 #### **ONNX model 的用法**
-您需要预先从[官方网站](https://github.com/microsoft/onnxruntime)下载 **ONNX runtime** 的安装包. 请注意，ONNX runtime 的版本必须高于或者等于 1.17.1 (如：onnxruntime-linux-x64-1.17.1.tgz).
+您需要预先从[官方网站](https://github.com/microsoft/onnxruntime)下载 **ONNX Runtime** 的安装包. 请注意，ONNX Runtime 的版本必须高于或者等于 1.17.1 (如：onnxruntime-linux-x64-1.17.1.tgz).
 <br>
 
 
@@ -391,11 +390,11 @@ from ten_vad import TenVad
 
 ```
 1) cd examples_onnx/python
-2) ./build-and-deploy-linux.sh --ort-path /absolute/path/to/your/onnxruntime/root/dir # For Linux. If macOS, run build-and-deploy-macos.sh instead.
+2) ./build-and-deploy-linux.sh --ort-path /absolute/path/to/your/onnxruntime/root/dir # For Linux.
 ```
 
 **注意**
-1. 如果在与运行 build-and-deploy-linux.sh 不同的目录执行 ONNX Demo，请确保创建指向 src/onnx_model/ 的符号链接，以防止 ONNX 模型文件加载失败。
+1. 如果在运行 build-and-deploy-linux.sh 不同的目录下执行 ONNX Demo，请确保创建指向 src/onnx_model/ 的符号链接，以防止 ONNX 模型文件加载失败。
 
 2. ONNX 模型位于 src/onnx_model 目录中。
 
@@ -588,19 +587,26 @@ sudo apt install libc++1
 
 
 ##### **ONNX 的用法**
-
-You have to download the **onnxruntime** packages from the [microsoft official onnxruntime github website](https://github.com/microsoft/onnxruntime). Note that the version of onnxruntime must be higher than or equal to 1.17.1 (e.g. onnxruntime-linux-x64-1.17.1.tgz).
+您需要预先从[官方网站](https://github.com/microsoft/onnxruntime)下载 **ONNX Runtime** 的安装包. 请注意，ONNX Runtime 的版本必须高于或者等于 1.17.1 (如：onnxruntime-linux-x64-1.17.1.tgz).
 <br>
-You can check the official **ONNX Runtime releases** from [this website](https://github.com/microsoft/onnxruntime/tags). And for example, to download version 1.17.1 (Linux x64), use [this link](https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-1.17.1.tgz). After extracting the compressed file, you'll find two important directories:`include/` - header files, `lib/` - library files
+
+
+您可以从[官方网站](https://github.com/microsoft/onnxruntime/tags)查看 **ONNX Runtime** 版本. 例如通过 [官方](https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-1.17.1.tgz)下载1.17.1版本（Linux x64）并提取压缩文件后. 您会获得两个重要的目录：`include/` - 头文件, `lib/` - 库文件。
 
 ```
-1) cd examples_onnx
-2) ./build-and-deploy-linux.sh --ort-path /absolute/path/to/your/onnxruntime/root/dir
+1) cd examples_onnx/python
+2) ./build-and-deploy-linux.sh --ort-path /absolute/path/to/your/onnxruntime/root/dir # Linux. 
 ```
 
-**Note 1**: If executing the onnx demo from a different directory than the one used when running build-and-deploy-linux.sh, ensure to create a symbolic link to src/onnx_model/ to prevent ONNX model file loading failures.
-**Note 2**: The **ONNX model** locates in `src/onnx_model` directory.
-**Note 3**: For ONNX example builds see [examples_onnx/README.md](/examples_onnx/README.md).
+**注意**
+1. 如果在运行 build-and-deploy-linux.sh 不同的目录下执行 ONNX Demo，请确保创建指向 src/onnx_model/ 的符号链接，以防止 ONNX 模型文件加载失败。
+
+2. ONNX 模型位于`src/onnx_model`目录中。
+
+3. 对于 macOS，请运行 build-and-deploy-macos.sh。
+
+4. ONNX example 的构建可以参考 [examples_onnx/README.md](/examples_onnx/README.md).
+
 
 <br>
 
@@ -763,8 +769,8 @@ TEN VAD 可在以下 AI 驱动的问答平台上使用。它们可以帮助您�
 
 ## 许可证
 
-- 除下列目录外，TEN VAD 以 Apache License 2.0（附加条款）发布，详见根目录下的 LICENSE 文件。 
-- `pitch_est.cc` 包含修改和派生自 [LPCNet](https://github.com/xiph/LPCNet)的代码, 采用 [BSD-2-Clause](https://spdx.org/licenses/BSD-2-Clause.html) 和 [BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html) 许可, 详情请参阅根目录下的 NOTICES 文件。
+- 除下列目录外，TEN VAD 以 Apache License 2.0（带有额外条款）发布，详见根目录下的 LICENSE 文件。 
+- `pitch_est.cc` 包含修改和派生自 [LPCNet](https://github.com/xiph/LPCNet) 的代码, 采用 [BSD-2-Clause](https://spdx.org/licenses/BSD-2-Clause.html) 和 [BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html) 许可, 详情请参阅根目录下的 NOTICES 文件。
 
 <br>
 
@@ -795,4 +801,4 @@ TEN VAD 可在以下 AI 驱动的问答平台上使用。它们可以帮助您�
 [lang-en-badge]: https://img.shields.io/badge/English-lightgrey
 [lang-en-readme]: https://github.com/TEN-framework/ten-vad/blob/main/README.md
 [lang-zh-badge]: https://img.shields.io/badge/简体中文-lightgrey
-[lang-zh-readme]: https://github.com/TEN-framework/ten-vad/blob/main/docs/README-CN.md
+[lang-zh-readme]: https://github.com/bluemotional/ten-vad/blob/main/docs/README-CN.md
